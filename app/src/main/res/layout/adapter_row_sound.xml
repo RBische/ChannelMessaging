@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:listPreferredItemHeight">
+
+    <ImageView
+        android:layout_width="?android:attr/listPreferredItemHeight"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:scaleType="fitXY"
+        android:id="@+id/ivProfil"/>
+    <Button
+        android:layout_width="?android:attr/listPreferredItemHeight"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_toRightOf="@+id/ivProfil"
+        android:layout_toEndOf="@+id/ivProfil"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_action_play"
+        android:id="@+id/btnPlay" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/btnPlay"
+        android:layout_toEndOf="@+id/btnPlay"
+        android:id="@+id/sbPlay" />
+
+</RelativeLayout>
